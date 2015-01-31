@@ -1,4 +1,4 @@
-# C++ Cryptography Library (LIBCrypto)
+# C++ Cryptography Library (BCrypto)
 This is a c++ project with a bunch of cryptographic implementations. This aim to be a experimental project to build a cryptographic
 library and a way to learn a little more about c++, assembly programming and computer architecture
 
