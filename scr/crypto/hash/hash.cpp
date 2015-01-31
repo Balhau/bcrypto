@@ -30,5 +30,22 @@ namespace balhau {
     {
 
     }
+    
+    char* Hash::digest(char* data)
+    {
+      return 0;
+    }
+    
+    char* Hash::finish()
+    {
+      return 0;
+    }
+
+    void Hash::update(char* data)
+    {
+
+    }
+
+
   }
 }

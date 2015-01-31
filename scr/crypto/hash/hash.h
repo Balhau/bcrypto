@@ -27,6 +27,9 @@ namespace balhau{
       public:
       Hash();
       Hash(const Hash& other);
+      virtual char* digest(char* data);
+      virtual void update(char* data);
+      virtual char* finish();
     };
   }
 }

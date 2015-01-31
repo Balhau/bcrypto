@@ -30,5 +30,22 @@ namespace balhau {
     {
 
     }
+    
+    char* Md5::digest(char* data)
+    {
+      return "MD5 Digest";
+    }
+    
+    void Md5::update(char* data)
+    {
+       
+    }
+    
+    char* Md5::finish()
+    {
+      return "Md5 Finished";
+    }
+
+
   }
 }

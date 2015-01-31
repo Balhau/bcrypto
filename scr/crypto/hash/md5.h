@@ -29,6 +29,9 @@ namespace balhau{
       public:
       Md5();
       Md5(const Md5& other);
+      void update(char* data);
+      char* digest(char* data);
+      char* finish();
     };
   }
 }
