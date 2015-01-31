@@ -5,7 +5,7 @@ library and a way to learn a little more about c++, assembly programming and com
 ## Why c++
 The two candidates were c and c++. The decision for c++ is only because it give us the power to build an OOP library while plain C would
 force us to build modules of functions. Truth to be told the library will export a C like api to help interoperability with other
-languages (including C) nevertheless the HOOP nature of C++ is a nice to have and this was a decision factor. So why not Java instead
+languages (including C) nevertheless the OOP nature of C++ is a nice to have and this was a decision factor. So why not Java instead
 of C++. Well the main reason is because Java is to high level and don't give us a way to expoit the hardware features when needed.
 The possibility to made custom assembly code for the most overheaded computations is an important feature that lacks in languages as
 high level as Java.
