@@ -23,12 +23,12 @@ namespace balhau {
   namespace crypto {
     Hash::Hash()
     {
-
+      
     }
 
     Hash::Hash(const Hash& other)
     {
-
+      
     }
     
     char* Hash::digest(char* data)

@@ -19,17 +19,24 @@
  */
 
 #include "md5.h"
+#include <iostream>
 namespace balhau {
   namespace crypto{
     Md5::Md5()
     {
-
+      std::cout << "Constructor called" << std::endl;
     }
 
     Md5::Md5(const Md5& other)
     {
-
+      std::cout << "Copy constructor called" << std::endl;
     }
+    
+    Md5::~Md5()
+    {
+      std::cout << "Destructor called" << std::endl;
+    }
+
     
     char* Md5::digest(char* data)
     {

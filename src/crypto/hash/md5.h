@@ -32,6 +32,7 @@ namespace balhau{
       void update(char* data);
       char* digest(char* data);
       char* finish();
+      ~Md5();
     };
   }
 }

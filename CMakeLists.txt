@@ -17,5 +17,4 @@ add_subdirectory(src/)
 add_executable(mcrypto main.cpp)
 target_link_libraries(mcrypto LINK_PUBLIC bhash)
 
-
 install(TARGETS mcrypto RUNTIME DESTINATION bin)
