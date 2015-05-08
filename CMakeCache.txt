@@ -168,6 +168,9 @@ bhash_LIB_DEPENDS:STATIC=general;bmath;
 //Dependencies for target
 bmath_LIB_DEPENDS:STATIC=
 
+//Dependencies for target
+butil_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries
@@ -257,7 +260,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=/usr/local/share/cmake-3.1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
