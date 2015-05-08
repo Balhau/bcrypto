@@ -1,6 +1,6 @@
 #include <iostream>
-#include "scr/crypto/hash/md5.h"
-#include "scr/arch/arch.h"
+#include "src/crypto/hash/md5.h"
+#include "src/arch/arch.h"
 
 using namespace balhau::crypto;
 using namespace std;
