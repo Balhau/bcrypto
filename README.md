@@ -15,3 +15,20 @@ high level as Java.
 This is a project build arround CMake build system. We could use the linux traditional tools however these are a little too low level
 and a lot of work must be done in managing the build of the library. Since the deployment of the library in several Operative Systems
 and arquitectures would require custom build primitives I decided to use a high level tool to abstract all these not so nice work.
+
+
+## Overal structure
+
+The project, for now, is composed of three libs and one aplication.
+
+### Utilities libbutil.so
+
+  Here will be implemented auxiliary functionalities.
+
+### Math Library libbmath.a
+
+  Here will be implemented math architecture dependent operations
+
+### Hash Library libbhash.so
+
+  Here wil be implemented hash functions 
