@@ -4,8 +4,8 @@ project(bcrypto)
 
 #Set compiler flags
 if(CMAKE_COMPILER_IS_GNUCXX)
-    set(CMAKE_CXX_FLAGS "-Wwrite-strings -lstdc++ -O3")        ## Optimize
-    #set(CMAKE_EXE_LINKER_FLAGS "-s")  ## Strip binary
+    #set(CMAKE_CXX_FLAGS "-Wwrite-strings -lstdc++ -O3")        ## Optimize
+    set(CMAKE_EXE_LINKER_FLAGS "-s")  ## Strip binary
 endif()
 
 SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)

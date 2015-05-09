@@ -42,6 +42,8 @@ int main(int argc, char **argv) {
     VectorUtil<float>::printVector(vec2,4);
     cout << hash.digest("Ola Mundo") << endl;
     cout << "Hello, world!" << endl;
+    cout << "Short, " << sizeof(short) << endl;
+    cout << "Int, " << sizeof(int) << endl;
     
     return 0;
 }
