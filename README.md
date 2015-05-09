@@ -16,6 +16,20 @@ This is a project build arround CMake build system. We could use the linux tradi
 and a lot of work must be done in managing the build of the library. Since the deployment of the library in several Operative Systems
 and arquitectures would require custom build primitives I decided to use a high level tool to abstract all these not so nice work.
 
+## Compile the project
+
+To compile the project you should have installed CMake and a g, g++ compiler. The project has code in c++ as well c for the low level
+inline assembly instructions to leverage computer power over specialized instructions for the several computer architectures.
+
+After this pre requisites installed you should run
+
+    cmake .
+    make
+
+After that the binaries as well as the dynamic libs will be generated into the folder bin
+
+    ls bin
+    libbhash.so  libbmath.so  libbutil.so  mcrypto
 
 ## Overal structure
 
@@ -31,4 +45,4 @@ The project, for now, is composed of three libs and one aplication.
 
 ### Hash Library libbhash.so
 
-  Here wil be implemented hash functions 
+  Here wil be implemented hash functions
