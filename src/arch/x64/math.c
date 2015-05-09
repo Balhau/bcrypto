@@ -37,3 +37,42 @@ void BMATH_ADD_VEC(float* vec1,float* vec2)
        : "%xmm0", "%xmm1"
   ); 
 }
+
+void BMATH_AND_VEC(float* vec1,float* vec2)
+{
+  __asm__ volatile(
+    "movups %0,%%xmm0;\
+     movups %1,%%xmm1;\
+     andps %%xmm1,%%xmm0;\
+     movups %%xmm0,%2;"
+       :
+       : "m" (*vec1), "m" (*vec2),"m"(*vec1)
+       : "%xmm0", "%xmm1"
+  ); 
+}
+
+void BMATH_OR_VEC(float* vec1,float* vec2)
+{
+  __asm__ volatile(
+    "movups %0,%%xmm0;\
+     movups %1,%%xmm1;\
+     orps %%xmm1,%%xmm0;\
+     movups %%xmm0,%2;"
+       :
+       : "m" (*vec1), "m" (*vec2),"m"(*vec1)
+       : "%xmm0", "%xmm1"
+  ); 
+}
+
+void BMATH_XOR_VEC(float* vec1,float* vec2)
+{
+  __asm__ volatile(
+    "movups %0,%%xmm0;\
+     movups %1,%%xmm1;\
+     xorps %%xmm1,%%xmm0;\
+     movups %%xmm0,%2;"
+       :
+       : "m" (*vec1), "m" (*vec2),"m"(*vec1)
+       : "%xmm0", "%xmm1"
+  ); 
+}

@@ -24,6 +24,15 @@ int main(int argc, char **argv) {
     BMATH_ADD_VEC(v1,v2);
     VectorUtil<float>::printVector(vec1,4);
     VectorUtil<float>::printVector(vec2,4);
+    BMATH_AND_VEC(v1,v2);
+    VectorUtil<float>::printVector(vec1,4);
+    VectorUtil<float>::printVector(vec2,4);
+    BMATH_XOR_VEC(v1,v1);
+    VectorUtil<float>::printVector(vec1,4);
+    VectorUtil<float>::printVector(vec2,4);
+    BMATH_OR_VEC(v1,v2);
+    VectorUtil<float>::printVector(vec1,4);
+    VectorUtil<float>::printVector(vec2,4);
     cout << hash->digest("Ola Mundo") << endl;
     cout << "Hello, world!" << std::endl;
     return 0;
