@@ -1,6 +1,8 @@
 #include "math.h"
 
-int BMATH_MUL_INT(int a,int b){
+
+
+inline int BMATH_MUL_INT(int a,int b){
   int c;
   int d=a;
   __asm__ volatile(	
@@ -12,7 +14,7 @@ int BMATH_MUL_INT(int a,int b){
   return c;
 }
 //addps %%xmm1,%%xmm0;\ --> Add instruction
-void BMATH_MUL_VEC(float* vec1, float* vec2)
+inline void MUL_VEC_FLOAT128(float* vec1, float* vec2)
 {
   __asm__ volatile(
     "movups %0,%%xmm0;\
@@ -25,7 +27,7 @@ void BMATH_MUL_VEC(float* vec1, float* vec2)
   );
 }
 
-void BMATH_ADD_VEC(float* vec1,float* vec2)
+inline void ADD_VEC_FLOAT128(float* vec1,float* vec2)
 {
   __asm__ volatile(
     "movups %0,%%xmm0;\
@@ -38,7 +40,7 @@ void BMATH_ADD_VEC(float* vec1,float* vec2)
   ); 
 }
 
-void BMATH_AND_VEC(float* vec1,float* vec2)
+inline void AND_VEC_FLOAT128(float* vec1,float* vec2)
 {
   __asm__ volatile(
     "movups %0,%%xmm0;\
@@ -51,7 +53,7 @@ void BMATH_AND_VEC(float* vec1,float* vec2)
   ); 
 }
 
-void BMATH_OR_VEC(float* vec1,float* vec2)
+inline void OR_VEC_FLOAT128(float* vec1,float* vec2)
 {
   __asm__ volatile(
     "movups %0,%%xmm0;\
@@ -64,7 +66,7 @@ void BMATH_OR_VEC(float* vec1,float* vec2)
   ); 
 }
 
-void BMATH_XOR_VEC(float* vec1,float* vec2)
+inline void XOR_VEC_FLOAT128(float* vec1,float* vec2)
 {
   __asm__ volatile(
     "movups %0,%%xmm0;\
